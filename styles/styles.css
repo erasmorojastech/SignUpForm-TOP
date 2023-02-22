@@ -1,0 +1,55 @@
+/* Base styles*/
+
+:root {
+  --background-image-color: rgba(20, 20, 20, 0.1);
+  --image-font-color: #fff;
+  --background-form-color: #707070;
+  --form-font-color: #eee;
+  --background-main-color: #000;
+  --primary-font-color: #000;
+  --valid-form-color: #00aa00;
+  --invalid-form-color: #f00;
+  --focused-form-color: rgb(0, 102, 255);
+  --hovered-button-color: #aaa;
+
+}
+
+.container {
+  width: 1366px;
+  height: 768px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left side Styles */
+
+.bg-image {
+  background-image: url("../assets/bg.jpg");
+  background-color: transparent;
+  background-size: 100% 100%;
+  width: 40%;
+  height: 100%;
+}
+
+/* "Domino Tournament" area styles */
+.logo-area {
+  display: flex;
+  background-color: var(--background-image-color);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20vh;
+}
+
+/* Domino logo size */
+img {
+  width: 20%;
+  height: 20%;
+}
+
+#domino, #tournament {
+  font-family: odin-font;
+  font-size: 32pt;
+  color: var(--image-font-color);
+}

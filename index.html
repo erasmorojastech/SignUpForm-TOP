@@ -5,10 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Sign-Up Form</title>
 </head>
 <body>
+  <!-- Full container of the document -->
   <main class="container">
-  </main>
+
+    <!-- Article that contains the left side of the document -->
+    <section class="bg-image">
+      <div class="logo-area">
+        <p id="domino">Domino</p>
+        <img src="./assets/domino.png" alt="Domino Logo">
+        <p id="tournament">Tournament</p>
+      </div>
+    </section>
+
+    <!-- Article that contains the right side of the document -->
+    <article class="right-side">
+
+      <p class="paragraph one">This is the Official Ultimate Domino Registration Form. Only 12 people will be admitted
+        to participate. You will be playing 11 rounds with a different teammate each. All the points will be scored
+        individually. The winner will be the player who gets the best score.</p>
+      <p class="paragraph two">Join and prepare to be the best.</p>
+
+      <h2>Registration!</h2>
+
+      <form class="form" action="#" method="post">
+        <div class="inputs">
+          <label for="firstName">Fist Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+
+        <div class="inputs">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <div class="inputs">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com">
+        </div>
+
+        <div class="inputs">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="number" id="phoneNumber" name="phoneNumber">
+        </div>
+
+        <div class="inputs">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="error" minlength="3" maxlength="8">
+        </div>
+
+        <div class="inputs">
+          <label for="confirmPass">Confirm Password</label>
+          <input type="password" id="confirmPass" name="confirmPass" minlength="3" maxlength="8">
+        </div>
+      </form>
+
+      <button type="submit">Create Account</button>
+      <p class="account">Already have an account? <a href="#">Log in</a></p>
+
+    </article>
 </body>
 </html>
