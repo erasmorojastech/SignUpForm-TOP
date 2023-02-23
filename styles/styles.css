@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-/* Left side Styles */
+/* Background image section styles */
 
 .bg-image {
   background-image: url("../assets/bg.jpg");
@@ -52,4 +52,88 @@ img {
   font-family: odin-font;
   font-size: 32pt;
   color: var(--image-font-color);
+}
+
+/* Form section styles */
+.right-side {
+  width: 60%;
+  height: 100%;
+}
+
+/* Top paragraphs styles */
+.paragraph {
+  font-size: 2rem;
+  margin: 3rem;
+  text-align: justify;
+}
+
+.one {
+  margin-top: 3rem;
+}
+
+/* Registration h2 styles */
+h2 {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  font-size: 2.5rem;
+  background-color: var(--background-form-color);
+  color: var(--form-font-color);
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+  background-color: var(--background-form-color);
+  color: var(--form-font-color);
+  gap: 25px;
+  box-shadow: 5px 5px 3px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.75rem;
+}
+
+input {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+input:invalid {
+  border-color: var(--invalid-form-color);
+}
+
+input:focus{
+  outline-color: var(--focused-form-color);
+}
+
+/* Submit button styles */
+button[type = 'submit'] {
+  background-color: var(--background-form-color);
+  color: var(--form-font-color);
+  margin: 3rem;
+  margin-top: 5rem;
+  border-radius: 5px;
+  width: 25%;
+  height: 5%;
+}
+
+button[type = 'submit']:hover {
+  background-color: var(--hovered-button-color);
+  color: var(--primary-font-color)
+}
+
+/* "Already have an account?" styles */
+.account {
+  margin-left: 3rem;
+  font-size: 1.25rem;
 }
